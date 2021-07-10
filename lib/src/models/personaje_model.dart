@@ -5,9 +5,7 @@ class PersonajeModel {
   String? species;
   String? gender;
   String? hair;
-  List<String>? alias;
   String? origin;
-  List<String>? abilities;
   String? imgurl;
 
   PersonajeModel({
@@ -17,9 +15,7 @@ class PersonajeModel {
     this.species,
     this.gender,
     this.hair,
-    this.alias,
     this.origin,
-    this.abilities,
     this.imgurl
   });
 
@@ -30,12 +26,9 @@ class PersonajeModel {
         species: data['species'],
         gender: data['gender'],
         hair: data['hair'],
-        alias: data['alias'],
         origin: data['origin'],
-        abilities: data['abilities'],
         imgurl: data['img_url'],
       );
 }
-
 
 

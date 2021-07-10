@@ -10,6 +10,7 @@ class PersonajesProvider {
     final _response = await _http.get(_url);
     List<dynamic> _data = _response.data;
 
-    return _data.map((_personajes) => PersonajeModel.fromMapJson(_personajes)).toList();
-  }
+    final _listapersonajes = _data.map((_personajes) => PersonajeModel.fromMapJson(_personajes)).toList();
+    return _listapersonajes;
+  } 
 }
